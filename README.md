@@ -393,6 +393,32 @@ rest.get( '/special', async function( request, content ){
 
 [Back to Feature list](#features)
 
+
+### Response ignor
+Customize the 'options' object to indicate the reponse should be ignored or not, the reponse
+```javascript
+ { 
+	 result: 'Content.', 
+	 options: {
+		 ignor: true, // the response is going to be ignored
+		 once: true,
+		 used: true, // once + user === ignor
+		 delay: 300,
+		 headers: { ETag: "10c24bc-4ab-457e1c1f" } } }
+})
+```
+
+### Response delay
+Customize the 'options' object of the return value with 'delay'
+```javascript
+ { 
+	 result: 'Content.', 
+	 options: { 
+		 delay: 300,
+		 headers: { ETag: "10c24bc-4ab-457e1c1f" } } }
+})
+```
+
 ### Response headers
 
 To refine the headers in the response HTML, the way is the same as above: customize the 'options' object of the return value.
@@ -616,6 +642,11 @@ The option secure tells connect-rest if security should be active for this servi
 
 
 ## Remove services
+One can remove all published services by calling the following function:
+```javascript
+rest.removeAllPathes()
+```
+
 One can remove a published service by calling the following function:
 
 ```javascript
@@ -867,4 +898,4 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 ## Bugs
 
-See <https://github.com/imrefazekas/connect-rest/issues>.
+See <https://github.com/hanzhihong9/connect-rest/issues>.

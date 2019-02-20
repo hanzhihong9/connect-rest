@@ -1,7 +1,7 @@
 {
   "name": "connect-rest",
-  "version": "3.0.29",
-  "description": "Exceptionally featureful RESTful web services middleware for Connect.",
+  "version": "3.1.00",
+  "description": "Exceptionally featureful RESTful web services middleware for Connect. Forked from https://github.com/imrefazekas/connect-rest",
   "keywords": [
     "connect",
     "rest",
@@ -9,17 +9,21 @@
     "router",
     "api"
   ],
-  "homepage": "https://github.com/imrefazekas/connect-rest",
+  "homepage": "https://github.com/hanzhihong9/connect-rest",
   "repository": {
     "type": "git",
-    "url": "git://github.com/imrefazekas/connect-rest.git"
+    "url": "git://github.com/hanzhihong9/connect-rest.git"
   },
   "bugs": {
-    "url": "http://github.com/imrefazekas/connect-rest/issues"
+    "url": "http://github.com/hanzhihong9/connect-rest/issues"
   },
   "author": {
     "name": "Imre Fazekas",
     "email": "mail@imrefazekas.me"
+  },
+  "fork-author": {
+    "name": "zhihong Han",
+    "email": "hanzhihong9@gmail.com"
   },
   "license": "MIT",
   "main": "./lib/rest-services.js",
